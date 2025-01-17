@@ -1,0 +1,40 @@
+:root {
+	--primary-color: #2196f3;
+	--active-color: #1e88e5;
+	--link-padding: 23px 20px;
+	--header-padding: 0 62px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	background-color: var(--primary-color);
+	width: 100%;
+	padding: var(--header-padding);
+}
+
+.nav {
+	padding: 23px 0;
+}
+
+.link {
+	color: white;
+	padding: var(--link-padding);
+	text-decoration: none;
+}
+
+.activeLink {
+	background-color: var(--active-color);
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding: 0 20px;
+	}
+
+	.link {
+		padding: 15px;
+	}
+}
