@@ -1,7 +1,12 @@
-import React from 'react'
+import { MainProviders } from './app/providers'
+import { AppRouter } from './app/routes'
 
 function App() {
-	return <div className='App'></div>
+	return (
+		<MainProviders>
+			<AppRouter />
+		</MainProviders>
+	)
 }
 
 export default App
