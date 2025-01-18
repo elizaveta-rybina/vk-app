@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 import { setActiveLink } from 'entities/model'
 import { TActiveLinkSliceStore } from 'entities/model/types'
@@ -26,9 +27,9 @@ const Header: React.FC<Props> = ({ items }) => {
 		<header className={styles.header}>
 			<nav className={styles.nav}>
 				{items.map(({ link, text }: MenuItem, index: number) => (
-					<a
+					<Link
 						key={index}
-						href={link}
+						to={link}
 						className={`${styles.link} ${
 							activeIndex === index ? styles.activeLink : ''
 						}`}
@@ -36,7 +37,7 @@ const Header: React.FC<Props> = ({ items }) => {
 						onClick={() => handleLinkClick(index)}
 					>
 						{text}
-					</a>
+					</Link>
 				))}
 			</nav>
 		</header>
