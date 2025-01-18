@@ -1,0 +1,42 @@
+:root {
+	--container-padding: 0 62px;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.container {
+  max-width: 1200px; /* Максимальная ширина контейнера */
+	margin: 0 auto; /* Центрирование содержимого */
+	padding: 0 var(--container-padding); /* Отступы по горизонтали */
+}
+
+.header {
+	background-color: var(--primary-color);
+	width: 100%;
+}
+
+.nav {
+	padding: 23px 0;
+}
+
+.link {
+	color: white;
+	padding: var(--link-padding);
+	text-decoration: none;
+}
+
+.activeLink {
+	background-color: var(--active-color);
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 20px; /* Уменьшаем отступы на малых экранах */
+	}
+
+	.link {
+		padding: 15px;
+	}
+}
