@@ -7,9 +7,9 @@
 }
 
 .container {
-  max-width: 1200px; /* Максимальная ширина контейнера */
-	margin: 0 auto; /* Центрирование содержимого */
-	padding: 0 var(--container-padding); /* Отступы по горизонтали */
+  width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
 }
 
 .header {
@@ -33,7 +33,7 @@
 
 @media (max-width: 768px) {
 	.container {
-		padding: 0 20px; /* Уменьшаем отступы на малых экранах */
+		padding: 0 20px;
 	}
 
 	.link {
