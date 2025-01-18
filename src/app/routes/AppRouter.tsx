@@ -1,8 +1,8 @@
 import { FavoritesPage, HomePage } from 'pages'
-import { createHashRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Container from 'shared/Container'
 
-const router = createHashRouter([
+const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Container />,
