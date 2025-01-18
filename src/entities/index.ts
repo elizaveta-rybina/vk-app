@@ -1,1 +1,1 @@
-export { headerReducer } from './model'
+export { headerReducer } from './model';

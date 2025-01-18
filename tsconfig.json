@@ -5,14 +5,18 @@
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"baseUrl": "./src",
 		"paths": {
-			"features/*": ["features/*"]
+			"app/*": ["app/*"],
+			"entities/*": ["entities/*"],
+			"features/*": ["features/*"],
+			"shared/*": ["shared/*"],
+			"widgets/*": ["widgets/*"]
 		},
 		"allowJs": true,
 		"skipLibCheck": true,
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
-		"module": "commonJS",
+		"module": "ESNext",
 		"esModuleInterop": true,
 		"strict": true,
 		"sourceMap": true,
@@ -23,5 +27,6 @@
 		"noEmit": true,
 		"jsx": "react-jsx"
 	},
-	"include": ["src"]
+	"include": ["src"],
+  "exclude": ["node_modules", "webpack.config.js"]
 }

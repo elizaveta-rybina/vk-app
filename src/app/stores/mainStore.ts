@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
-import { headerReducer } from 'entities'
+//TODO - разобраться почему не импортируется из entities
+import { headerReducer } from 'entities/model'
 
 const mainReducer = combineReducers({
 	activeLink: headerReducer,

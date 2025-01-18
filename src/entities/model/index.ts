@@ -1,1 +1,2 @@
-export { default as headerReducer, setActiveLink } from './header.slice'
+export { headerReducer, setActiveLink } from './header.slice'
+

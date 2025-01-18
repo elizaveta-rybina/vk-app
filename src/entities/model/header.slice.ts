@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { TActiveLinkState } from './types'
 
 const initialState: TActiveLinkState = {
-	activeId: 1,
+	activeId: 0,
 }
 
 const headerSlice = createSlice({
@@ -16,4 +16,5 @@ const headerSlice = createSlice({
 })
 
 export const { setActiveLink } = headerSlice.actions
-export default headerSlice.reducer
+export const headerReducer = headerSlice.reducer;
+
