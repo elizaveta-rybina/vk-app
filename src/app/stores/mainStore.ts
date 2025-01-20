@@ -1,10 +1,14 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import catsReducer from './reducers'
 
-const mainReducer = combineReducers({})
+const mainReducer = combineReducers({
+  cats: catsReducer,
+});
 
-export type RootState = ReturnType<typeof mainReducer>
+export type RootState = ReturnType<typeof mainReducer>;
 
 export const mainStore = configureStore({
-	reducer: mainReducer,
-})
+  reducer: mainReducer,
+});
+
+export type AppDispatch = typeof mainStore.dispatch;
