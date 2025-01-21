@@ -1,0 +1,20 @@
+.heart {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;  // Сместил на 25px влево
+  font-size: 35px;
+  color: rgb(182, 173, 173);
+  margin-top: 7px;
+  width: 70px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease, outline 0.3s ease;
+
+  &:hover {
+    color: rgb(192, 39, 39);
+  }
+
+  &.active {
+    color: rgb(255, 0, 0);  // Красное сердечко, если в избранном
+  }
+}
