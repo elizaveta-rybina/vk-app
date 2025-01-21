@@ -1,0 +1,11 @@
+.catImg {
+  width: 15vw; /* Используем процент от ширины экрана */
+  height: 15vw;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.catImg:hover {
+  transform: scale(1.1); /* Увеличение на 10% */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
