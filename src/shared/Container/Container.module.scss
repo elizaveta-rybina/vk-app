@@ -1,42 +1,26 @@
 :root {
-	--container-padding: 0 62px;
-}
-
-.wrapper {
-	width: 100%;
+  --container-padding: 62px;
+  --container-margin-top: 48px;
 }
 
 .container {
-  width: 1200px;
-	margin: 0 auto;
-	padding: 0 var(--container-padding);
-}
-
-.header {
-	background-color: var(--primary-color);
-	width: 100%;
-}
-
-.nav {
-	padding: 23px 0;
-}
-
-.link {
-	color: white;
-	padding: var(--link-padding);
-	text-decoration: none;
-}
-
-.activeLink {
-	background-color: var(--active-color);
+  padding: var(--container-margin-top) var(--container-padding);
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex; /* Устанавливаем flexbox для контейнера */
+  flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку, если не помещаются */
+  justify-content: flex-start; /* Выравнивание элементов по началу */
+  gap: 20px; /* Добавим расстояние между блоками */
 }
 
 @media (max-width: 768px) {
-	.container {
-		padding: 0 20px;
-	}
+  .wrapper {
+    padding: 20px 20px;
+  }
 
-	.link {
-		padding: 15px;
-	}
+  .container {
+    width: calc(100% - 40px);
+    flex-direction: column; /* Переводим блоки в колонку на мобильных */
+    gap: 15px; /* Меньше отступов между блоками на мобильных */
+  }
 }

@@ -1,0 +1,43 @@
+:root {
+  --container-padding: 62px;
+  --container-margin-top: 48px;
+}
+
+.container {
+  padding: var(--container-margin-top) var(--container-padding);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.cats {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 48px; /* Отступы между элементами */
+  justify-content: space-around; /* Отправка элементов на старт с равномерными отступами */
+  box-sizing: border-box;
+}
+
+.cats > * {
+  flex: 1 1 calc(20% - 48px); /* Рассчитываем ширину для 5 элементов с учётом отступов */
+  max-width: calc(20% - 48px); /* Гарантируем, что ширина элемента не превысит допустимую */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px 20px;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  .cats {
+    gap: 15px; /* Меньший отступ между элементами на мобильных устройствах */
+  }
+
+  .cats > * {
+    flex: 0 0 100%; /* Элементы будут занимать всю ширину на мобильных */
+    max-width: 100%;
+  }
+}

@@ -1,9 +1,10 @@
-import React from 'react'
-import Header from 'shared/Header'
+import Cats from 'widgets/Cats/Cats'
 
 const HomePage = () => {
 	return (
-		<div></div>
+		<div>
+			<Cats />
+		</div>
 	)
 }
 
