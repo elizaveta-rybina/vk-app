@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vk-app/static/css/main.2f2fba48.css",
-    "main.js": "/vk-app/static/js/main.c62086b3.js",
+    "main.css": "/vk-app/static/css/main.b98abd0d.css",
+    "main.js": "/vk-app/static/js/main.c3ce2a0e.js",
     "index.html": "/vk-app/index.html",
-    "main.2f2fba48.css.map": "/vk-app/static/css/main.2f2fba48.css.map",
-    "main.c62086b3.js.map": "/vk-app/static/js/main.c62086b3.js.map"
+    "main.b98abd0d.css.map": "/vk-app/static/css/main.b98abd0d.css.map",
+    "main.c3ce2a0e.js.map": "/vk-app/static/js/main.c3ce2a0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f2fba48.css",
-    "static/js/main.c62086b3.js"
+    "static/css/main.b98abd0d.css",
+    "static/js/main.c3ce2a0e.js"
   ]
 }
