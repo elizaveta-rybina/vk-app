@@ -7,20 +7,23 @@
   padding: var(--container-margin-top) var(--container-padding);
   box-sizing: border-box;
   margin: 0 auto;
-  display: flex; /* Устанавливаем flexbox для контейнера */
-  flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку, если не помещаются */
-  justify-content: flex-start; /* Выравнивание элементов по началу */
-  gap: 20px; /* Добавим расстояние между блоками */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
   .wrapper {
-    padding: 20px 20px;
+    padding: 20px;
   }
 
   .container {
-    width: calc(100% - 40px);
-    flex-direction: column; /* Переводим блоки в колонку на мобильных */
-    gap: 15px; /* Меньше отступов между блоками на мобильных */
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
   }
 }

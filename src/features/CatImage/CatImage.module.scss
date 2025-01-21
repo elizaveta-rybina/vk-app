@@ -1,5 +1,6 @@
 .catImage {
   position: relative;
+  display: flex;
 }
 
 .catImg {
@@ -7,6 +8,7 @@
   height: 15vw;
   object-fit: cover;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0;
 }
 
 .catImg:hover {

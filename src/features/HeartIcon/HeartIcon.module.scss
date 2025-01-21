@@ -1,7 +1,7 @@
 .heart {
   position: absolute;
   bottom: 10px;
-  right: 25px;  // Сместил на 25px влево
+  right: calc(0.2rem + 1vw);
   font-size: 35px;
   color: rgb(182, 173, 173);
   margin-top: 7px;
@@ -15,6 +15,6 @@
   }
 
   &.active {
-    color: rgb(255, 0, 0);  // Красное сердечко, если в избранном
+    color: rgb(255, 0, 0);
   }
 }
