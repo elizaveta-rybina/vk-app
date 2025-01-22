@@ -5,25 +5,4 @@
 
 .container {
   padding: var(--container-margin-top) var(--container-padding);
-  box-sizing: border-box;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    padding: 20px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
 }

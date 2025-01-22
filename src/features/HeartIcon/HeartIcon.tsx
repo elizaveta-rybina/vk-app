@@ -1,17 +1,17 @@
-import { useAddToFavorites, useRemoveFromFavorites } from 'app/api';
-import { RootState } from 'app/stores/mainStore';
-import { Cat } from 'app/stores/types';
-import { useCallback } from 'react';
-import { RiHeart3Fill, RiHeart3Line } from 'react-icons/ri';
-import { useSelector } from 'react-redux';
-
-import styles from './HeartIcon.module.scss';
+import { useAddToFavorites, useRemoveFromFavorites } from 'app/api'
+import { RootState } from 'app/stores/mainStore'
+import { Cat } from 'app/stores/types'
+import { useCallback } from 'react'
+import { RiHeart3Fill, RiHeart3Line } from 'react-icons/ri'
+import { useDispatch, useSelector } from 'react-redux'
 
 interface HeartIconProps {
   cat: Cat;
+  className?: string;
 }
 
-const HeartIcon = ({ cat }: HeartIconProps) => {
+const HeartIcon = ({ cat, className }: HeartIconProps) => {
+  const dispatch = useDispatch();
   const favoriteCats = useSelector((state: RootState) => state.cats.favorites);
 
   const isFavorite = favoriteCats.some(favCat => favCat.id === cat.id);
@@ -27,15 +27,20 @@ const HeartIcon = ({ cat }: HeartIconProps) => {
     }
   }, [cat, isFavorite, addToFavorites, removeFromFavorites]);
 
+  const handleClick = () => {
+    toggleFavorite();
+  };
+
   return isFavorite ? (
     <RiHeart3Fill
-      className={`${styles.heart} ${styles.active}`}
-      onClick={toggleFavorite}
+      className={className}
+      onClick={handleClick}
+      style={{ color: 'red' }} 
     />
   ) : (
     <RiHeart3Line
-      className={styles.heart}
-      onClick={toggleFavorite}
+      className={className}
+      onClick={handleClick}
     />
   );
 };

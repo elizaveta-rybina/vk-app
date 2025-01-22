@@ -6,7 +6,7 @@ const CatImage = ({ cat }: { cat: Cat }) => {
   return (
     <div className={styles.catImage}>
       <img src={cat.url} alt={`Cat ${cat.id}`} className={styles.catImg} />
-      <HeartIcon cat={cat} />
+      <HeartIcon cat={cat} className={styles.icon}/>
     </div>
   );
 };
