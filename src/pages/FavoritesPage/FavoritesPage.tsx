@@ -1,9 +1,9 @@
-import { RootState } from 'app/stores/mainStore';
-import { Cat } from 'app/stores/types';
-import CatImage from 'features/CatImage';
-import { useSelector } from 'react-redux';
+import { RootState } from 'app/stores/mainStore'
+import { Cat } from 'app/stores/types'
+import CatImage from 'features/CatImage'
+import { useSelector } from 'react-redux'
 
-import styles from './FavoritesPage.module.scss';
+import styles from 'widgets/Cats/Cats.module.scss'
 
 const FavoritesPage = () => {
   const favoriteCats = useSelector((state: RootState) => state.cats.favorites);

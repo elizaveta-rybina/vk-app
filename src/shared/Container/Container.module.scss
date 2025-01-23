@@ -3,6 +3,20 @@
   --container-margin-top: 48px;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 32px;
+    --container-margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 16px;
+    --container-margin-top: 16px;
+  }
+}
+
 .container {
   padding: var(--container-margin-top) var(--container-padding);
 }

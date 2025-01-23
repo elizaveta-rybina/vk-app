@@ -1,4 +1,4 @@
-import Cats from 'widgets/Cats/Cats'
+import Cats from 'widgets/Cats'
 
 const HomePage = () => {
 	return (
