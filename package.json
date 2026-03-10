@@ -1,18 +1,24 @@
 {
+	"homepage": "https://elizaveta-rybina.github.io/vk-app",
 	"name": "vk-app",
 	"version": "0.1.0",
 	"type": "module",
 	"private": true,
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.5.0",
-		"@tanstack/react-query": "^5.64.1",
+		"@tanstack/react-query": "^5.64.2",
 		"@tanstack/react-query-devtools": "^5.64.1",
+		"axios": "^1.12.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
+		"react-icons": "^5.4.0",
+		"react-infinite-scroll-component": "^6.1.0",
 		"react-redux": "^9.2.0",
 		"react-router-dom": "^7.9.0"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
 		"start": "webpack serve --mode development --open",
 		"build": "webpack --mode production",
 		"test": "echo \"No tests configured\"",
@@ -50,6 +56,7 @@
 		"css-loader": "^7.1.2",
 		"eslint-config-react-app": "^7.0.1",
 		"html-webpack-plugin": "^5.6.4",
+		"gh-pages": "^6.3.0",
 		"sass": "^1.83.4",
 		"sass-loader": "^16.0.4",
 		"style-loader": "^4.0.0",

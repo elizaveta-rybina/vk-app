@@ -9,7 +9,7 @@ import styles from './Container.module.scss'
 
 const Container: React.FC = () => {
 	return (
-		<div className={styles.wrapper}>
+		<div>
 			<Header items={headerMenu} />
 			<div className={styles.container}>
 				<Outlet />
